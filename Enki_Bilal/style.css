@@ -1,0 +1,532 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Sansita+Swashed:wght@300&display=swap');
+
+html,
+body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", sans-serif;
+}
+
+/* Ecrans de plus de 649px */
+@media screen and (min-width:766px) {
+
+    /* ****************** HEADER ***************** */
+    nav {
+        background: url(./img/exposition_enki-bilal_bretagne.jpg) no-repeat 50%, 35%;
+        filter: grayscale(100%);
+        height: 180px;
+        background-size: cover;
+    }
+
+    .sticky {
+        position: fixed;
+        top: 0;
+        width: 100%;
+    }
+
+    nav ul {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        background-color: rgba(189, 195, 199, .5);
+        padding: 20px 0px;
+    }
+
+    nav li {
+        list-style-type: none;
+    }
+
+    nav li:first-child {
+        background-color: #2e3131;
+        box-shadow: 1px 3px 5px 1px;
+        padding: 10px 15px;
+        border-radius: 5px;
+    }
+
+    #logo {
+        font-family: "Sancita Swashed", sans-serif;
+        font-size: 2.5rem;
+        color: #f2f1ef;
+    }
+
+    nav li a {
+        position: relative;
+        text-decoration: none;
+        filter: contrast(80%);
+        font-size: larger;
+        font-weight: 700;
+        color: #2e3131;
+    }
+
+    nav li a:hover:not(#logo) {
+        border-bottom: 2px solid #000000;
+        padding-bottom: 8px;
+        transition: .5s ease-in-out;
+    }
+
+
+    /* ******************** PRESENTATION ********************** */
+
+    #presentation {
+        padding-top: 180px;
+        background-color: #2e3131;
+        color: #f2f1ef;
+    }
+
+    #presentation h1 {
+        text-align: center;
+        margin: 30px 0px 20px 0px;
+        font-weight: 300;
+        font-size: 2.5rem;
+    }
+
+    #blocPresentation {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+        justify-items: center;
+        padding-bottom: 30px
+    }
+
+    #blocPresentation p {
+        margin: 0px 40px 0px 40px;
+    }
+
+    .autoportrait img {
+        box-shadow: 5px 5px 15px 5px #000000;
+        border-radius: 5px;
+    }
+
+    /* ********************* BIOGRAPHIE ******************** */
+
+    #biographie {
+        text-align: center;
+        padding: 50px 0;
+    }
+
+    #biographieArtiste h2 {
+        font-size: 2.5rem;
+        color: rgba(236, 236, 236, 1);
+        text-shadow: 1px 2px 1px rgba(149, 165, 166, 1);
+    }
+
+    #biographieArtiste p {
+        margin: 30px 50px;
+        text-align: justify;
+    }
+
+    #biographie .trait {
+        margin: 0 auto;
+        border: 1px Solid rgba(189, 195, 199, .5);
+        width: 45%;
+    }
+
+    #photoEnki img {
+        box-shadow: 5px 5px 15px 5px #000000;
+    }
+
+    #photoEnki p{
+        margin: 30px 50px;
+        text-align: justify;
+    }
+
+    /* ************************ ALBUMS ************************* */
+
+    #oeuvres {
+        background: rgba(218, 223, 225, 1);
+        padding: 30px 0;
+    }
+
+    #bloc-oeuvres {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        align-items: center;
+        column-gap: .5rem;
+        text-align: center;
+    }
+
+    #oeuvres h2 {
+        font-size: 2.6rem;
+        text-align: center;
+    }
+
+    .imagesOeuvres img {
+        width:200px;
+        box-shadow: 5px 5px 5px 0px #000000, inset 4px 4px 15px 0px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+    }
+
+    .imagesOeuvres img:hover {
+        cursor: pointer;
+        transition: .5s ease-in-out;
+        transform: scale(1.3);
+    }
+
+    .imagesOeuvres p{
+        margin: 10px 15px;
+        text-align: justify;
+    }
+
+    /* ****************** CONTACT ********************* */
+
+    #contact {
+        padding: 50px 0px 0px 0px;
+        background-color: rgba(243, 241, 239, 1);
+    }
+
+    #contact h2 {
+        margin: 0;
+        text-align: center;
+        font-size: 1.9rem;
+    }
+
+    .trait2 {
+        margin: 0 auto;
+        border: 1px Solid rgba(189, 195, 199, .5);
+        width: 45%;
+    }
+
+    #contactForm {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 30px;
+    }
+
+    #contact form {
+        margin: 30px;
+        width: 45%;
+        height: auto;
+        box-shadow: 5px 5px 15px 5px rgba(149, 165, 166, 1);
+        padding: 10px 20px;
+        border-radius: 5px;
+        padding: 25px;
+    }
+
+    #contact input,
+    textarea {
+        width: 80%;
+        margin: 10px 20px;
+        border: none;
+        border: 1px solid rgba(46, 49, 49, .3);
+        border-radius: 5px;
+        padding: 10px 20px;
+    }
+
+    .button{
+        text-align: center;
+    }
+    .button button{
+        border: none;
+        border: 1px solid rgba(46, 49, 49, .3);
+        background-color: #2e3131;
+        color: #f2f1ef;
+        border-radius: 5px;
+        padding: 10px 25px;
+    }
+
+    .button button:hover{
+        cursor: pointer;
+        border: none;
+        border: 1px solid rgba(46, 49, 49, .3);
+        background-color: rgba(149, 165, 166, 1);
+        color: #2e3131;
+        border-radius: 5px;
+        padding: 10px 25px;
+    }
+
+    /* ***************** RESEAUX ***************************** */
+
+    #copyright {
+        background-color: #2e3131;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        color: #f2f1ef;
+        padding: 25px 0px 20px 0px;
+    }
+
+    ul {
+        list-style-type: none;
+    }
+
+    #reseaux ul {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    i {
+        font-size: 2rem;
+        color: #f2f1ef;
+        padding: 15px;
+
+    }
+}
+
+
+
+
+/* ******************** MEDIA QUERIES TEL ******************* */
+
+@media screen and (max-width:766px) {
+
+    /* ****************** HEADER ***************** */
+    nav {
+        background: url(./img/exposition_enki-bilal_bretagne.jpg) no-repeat 50%, 35%;
+        filter: grayscale(100%);
+        height: 180px;
+        background-size: cover;
+    }
+
+    .sticky {
+        position: fixed;
+        top: 0;
+        width: 100%;
+    }
+
+    nav ul {
+        text-align: center;
+        background-color: rgba(189, 195, 199, .5);
+        padding: 14px 0px 1px 0px;
+    }
+
+    nav li {
+        list-style-type: none;
+    }
+
+    nav li:first-child {
+        background-color: #2e3131;
+        box-shadow: 1px 3px 5px 1px;
+        border-radius: 5px;
+    }
+
+    nav li {
+        margin-bottom: 12px;
+    }
+
+    #logo {
+        font-family: "Sancita Swashed", sans-serif;
+        font-size: 2.5rem;
+        color: #f2f1ef;
+    }
+
+    nav li a {
+        position: relative;
+        text-decoration: none;
+        filter: contrast(80%);
+        font-size: medium;
+        font-weight: 700;
+        color: #2e3131;
+    }
+
+    nav li a:hover:not(#logo) {
+        border-bottom: 2px solid #f2f1ef;
+        padding-bottom: 5px;
+        transition: .5s ease-in-out;
+    }
+
+
+    /* ******************** PRESENTATION ********************** */
+
+    #presentation {
+        padding-top: 180px;
+        background-color: #2e3131;
+        color: #f2f1ef;
+    }
+
+    #presentation h1 {
+        text-align: center;
+        margin: 30px 0px 20px 0px;
+        font-weight: 300;
+        font-size: 2.5rem;
+    }
+
+    #blocPresentation {
+        padding-bottom: 30px;
+        text-align: center;
+        margin: 10px;
+    }
+
+    #blocPresentation p {
+        margin: 10px 40px 0px 40px;
+    }
+
+    .autoportrait img {
+        box-shadow: 5px 5px 15px 5px #000000;
+        border-radius: 5px;
+    }
+
+    /* ********************* BIOGRAPHIE ******************** */
+
+    #biographie {
+        text-align: center;
+    }
+
+    #biographieArtiste h2 {
+        font-size: 2.5rem;
+        color: rgba(236, 236, 236, 1);
+        text-shadow: 1px 2px 1px rgba(149, 165, 166, 1);
+    }
+
+    #biographieArtiste p {
+        margin: 30px 10px;
+        text-align: justify;
+    }
+
+    #biographie .trait {
+        margin: 0 auto;
+        border: 1px Solid rgba(189, 195, 199, .5);
+        width: 45%;
+    }
+
+    #photoEnki img {
+        box-shadow: 5px 5px 15px 5px #000000;
+    }
+
+    #photoEnki p {
+        margin: 30px 10px;
+        text-align: justify;
+    }
+
+    /* ************************ ALBUMS ************************* */
+
+    #oeuvres {
+        background: rgba(218, 223, 225, 1);
+        padding: 30px 0;
+    }
+
+    #bloc-oeuvres {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: .2rem;
+        text-align: justify;
+    }
+
+   .imagesOeuvres h4{
+        font-size: 1.2rem;
+        text-align: center;
+    }
+
+    #oeuvres h2 {
+        font-size: 2.6rem;
+        text-align: center;
+    }
+
+    .imagesOeuvres{
+        text-align: center;
+    }
+    
+    .imagesOeuvres img {
+        box-shadow: 5px 5px 5px 0px #000000, inset 4px 4px 15px 0px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+        width: 100px;
+    }
+
+    .imagesOeuvres img:hover {
+        cursor: pointer;
+        transition: .5s ease-in-out;
+        transform: scale(1.3);
+    }
+
+    .imagesOeuvres p{
+        margin: 10px 5px;
+        text-align: justify;
+
+    }
+
+    /* ****************** CONTACT ********************* */
+
+    #contact {
+        padding: 50px 0px 0px 0px;
+        background-color: rgba(243, 241, 239, 1);
+    }
+
+    #contact h2 {
+        margin: 0;
+        text-align: center;
+        font-size: 1.9rem;
+    }
+
+    .trait2 {
+        margin: 0 auto;
+        border: 1px Solid rgba(189, 195, 199, .5);
+        width: 45%;
+    }
+
+    #contactForm {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 30px;
+    }
+
+    #contact form {
+        margin: 30px;
+        width: 65%;
+        height: auto;
+        box-shadow: 5px 5px 15px 5px rgba(149, 165, 166, 1);
+        padding: 10px 20px;
+        border-radius: 5px;
+        padding: 25px;
+    }
+
+    #contact input,
+    textarea {
+        width: 80%;
+        margin: 10px 20px;
+        border: none;
+        border: 1px solid rgba(46, 49, 49, .3);
+        border-radius: 5px;
+        padding: 10px 20px;
+    }
+
+    .button{
+        text-align: center;
+    }
+    .button button{
+        border: none;
+        border: 1px solid rgba(46, 49, 49, .3);
+        background-color: #2e3131;
+        color: #f2f1ef;
+        border-radius: 5px;
+        padding: 10px 25px;
+    }
+
+    .button button:hover{
+        cursor: pointer;
+        border: none;
+        border: 1px solid rgba(46, 49, 49, .3);
+        background-color: rgba(149, 165, 166, 1);
+        color: #2e3131;
+        border-radius: 5px;
+        padding: 10px 25px;
+    }
+
+    /* ***************** RESEAUX ***************************** */
+
+    #copyright {
+        background-color: #2e3131;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        color: #f2f1ef;
+        padding: 25px 0px 20px 0px;
+    }
+
+    ul {
+        list-style-type: none;
+    }
+
+    #reseaux ul {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    i {
+        font-size: 2rem;
+        color: #f2f1ef;
+        padding: 15px;
+
+    }
+}
